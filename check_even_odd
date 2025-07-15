@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+void check_even_odd(int num)
+{
+    if(num%2==0)
+    {
+        cout<<num<<" is the even number";
+    }
+    else
+    {
+        cout<<num<<" is the odd number";
+    }
+}
+int main()
+{
+    int number[100],size,i;
+    cout<<"The size of the array is:";
+    cin>>size;
+    cout<<"The element of the array is:"<<endl;
+    for(i=0;i<size;i++)
+    {
+        cin>>number[i];
+    }
+    cout<<"The array is:  "<<endl;
+    for(i=0;i<size;i++)
+    {
+        cout<<"  "<<number[i];
+    }
+    cout<<endl;
+    for(i=0;i<size;i++)
+    {
+        check_even_odd(number[i]);
+        cout<<endl;
+    }
+    return 0;
+    }
